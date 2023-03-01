@@ -14,7 +14,7 @@ interface CustomFormProps {
   message: string | Error | null;
 }
 
-export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
+export const CustomForm = ({ onSubmit }: CustomFormProps) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
 
