@@ -1,5 +1,12 @@
 import styled from "@emotion/styled";
+import { CommonThemeProps, getBorders } from "czifui";
 
 export const StyledWrapper = styled.div`
-  background-color: pink;
+  /* ${(props: CommonThemeProps) => {
+    const borders = getBorders(props);
+
+    return `
+      border: ${borders?.gray};
+    `;
+  }} */
 `;

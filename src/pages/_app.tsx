@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { NavBar } from "src/components/NavBar";
 import { StyledApp } from "src/styles/appStyle";
 import createEmotionCache from "src/styles/createEmotionCache";
+import "src/styles/global.css";
 import { theme } from "src/styles/theme";
 
 // Client-side cache, shared for the whole session of the user in the browser.

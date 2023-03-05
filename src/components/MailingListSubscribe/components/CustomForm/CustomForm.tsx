@@ -1,6 +1,6 @@
 import { FormControl } from "@mui/material";
-import { Button, InputText } from "czifui";
-import { useState } from "react";
+import { Button, Callout, InputText } from "czifui";
+import { useEffect, useState } from "react";
 
 type FormInfo = {
   EMAIL: string;
@@ -14,7 +14,7 @@ interface CustomFormProps {
   message: string | Error | null;
 }
 
-export const CustomForm = ({ onSubmit }: CustomFormProps) => {
+export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
 
@@ -30,9 +30,31 @@ export const CustomForm = ({ onSubmit }: CustomFormProps) => {
       });
   };
 
+  useEffect(() => {
+    if (status === "success") {
+      setEmail("");
+      setFirstName("");
+    }
+  }, [status]);
+
   return (
     <FormControl>
       <h3 className="mc__title">Join our email list for future updates.</h3>
+      {status === "sending" && (
+        <Callout expandable={false} intent="info">
+          Sending...
+        </Callout>
+      )}
+      {status === "error" && (
+        <Callout expandable={false} intent="error">
+          {message}
+        </Callout>
+      )}
+      {status == "success" && (
+        <Callout expandable={false} intent="success">
+          {message}
+        </Callout>
+      )}
       <div className="mc__field-container">
         <InputText
           sdsType="textField"

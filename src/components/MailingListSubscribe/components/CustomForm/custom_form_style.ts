@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
+import { CommonThemeProps, getBorders } from "czifui";
 
-export const StyledForm = styled.div`
-  background-color: pink;
+// TODO: unused
+export const SuccessWrapper = styled.div`
+  ${(props: CommonThemeProps) => {
+    const borders = getBorders(props);
+
+    return `
+      border: ${borders?.success};
+    `;
+  }}
 `;
