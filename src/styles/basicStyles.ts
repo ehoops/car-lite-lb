@@ -10,10 +10,13 @@ import {
   getColors,
   getFontWeights,
 } from "czifui";
+import { LargerThanBreakpoint } from "./appStyle";
 
 export const NarrowContainer = styled.div`
   max-width: 800px;
-  min-width: 400px;
+  ${LargerThanBreakpoint(`
+    min-width: 400px;
+  `)}
   margin: 0 auto 0;
 `;
 

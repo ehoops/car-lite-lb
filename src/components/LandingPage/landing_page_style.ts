@@ -32,4 +32,5 @@ export const ImageSizer = styled.div`
 export const StyledList = styled.ul`
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 `;

@@ -1,6 +1,11 @@
-import { FormControl } from "@mui/material";
 import { Button, Callout, InputText } from "czifui";
 import { useEffect, useState } from "react";
+import {
+  InputLabel,
+  InputsWrapper,
+  StyledFormControl,
+  Title,
+} from "./custom_form_style";
 
 type FormInfo = {
   EMAIL: string;
@@ -38,8 +43,8 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
   }, [status]);
 
   return (
-    <FormControl>
-      <h3 className="mc__title">Join our email list for future updates.</h3>
+    <StyledFormControl>
+      <Title>Join our email list for updates and announcements</Title>
       {status === "sending" && (
         <Callout expandable={false} intent="info">
           Sending...
@@ -55,27 +60,32 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
           {message}
         </Callout>
       )}
-      <div className="mc__field-container">
+      <InputsWrapper>
+        <InputLabel label-for="first-name">Name</InputLabel>
         <InputText
           sdsType="textField"
           label="First Name"
+          hideLabel
           id="first-name"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
+          placeholder="Sam"
         />
-
+        <InputLabel label-for="email">Email</InputLabel>
         <InputText
           sdsType="textField"
           label="Email"
+          hideLabel
           id="email"
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           value={email}
           placeholder="your@email.com"
         />
-      </div>
-
-      <Button onClick={handleSubmit}>Submit</Button>
-    </FormControl>
+        <Button sdsType="primary" sdsStyle="square" onClick={handleSubmit}>
+          Join
+        </Button>
+      </InputsWrapper>
+    </StyledFormControl>
   );
 };
