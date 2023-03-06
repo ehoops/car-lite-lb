@@ -1,12 +1,10 @@
-import { Button } from "czifui";
+import { MailingListSubscribe } from "../MailingListSubscribe";
 import { StyledWrapper } from "./landing_page_style";
 
 export const LandingPage = () => {
   return (
     <StyledWrapper>
-      <Button sdsType="primary" sdsStyle="rounded">
-        Submit
-      </Button>
+      <MailingListSubscribe />
       Your new component
     </StyledWrapper>
   );
