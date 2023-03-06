@@ -4,6 +4,7 @@ import {
   InputLabel,
   InputsWrapper,
   StyledFormControl,
+  StyledInputText,
   Title,
 } from "./custom_form_style";
 
@@ -44,7 +45,7 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
 
   return (
     <StyledFormControl>
-      <Title>Join our email list for updates and announcements</Title>
+      <Title>Join our email list for updates</Title>
       {status === "sending" && (
         <Callout expandable={false} intent="info">
           Sending...
@@ -62,7 +63,7 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
       )}
       <InputsWrapper>
         <InputLabel label-for="first-name">Name</InputLabel>
-        <InputText
+        <StyledInputText
           sdsType="textField"
           label="First Name"
           hideLabel
@@ -72,7 +73,7 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
           placeholder="Sam"
         />
         <InputLabel label-for="email">Email</InputLabel>
-        <InputText
+        <StyledInputText
           sdsType="textField"
           label="Email"
           hideLabel
@@ -82,10 +83,10 @@ export const CustomForm = ({ onSubmit, status, message }: CustomFormProps) => {
           value={email}
           placeholder="your@email.com"
         />
-        <Button sdsType="primary" sdsStyle="square" onClick={handleSubmit}>
-          Join
-        </Button>
       </InputsWrapper>
+      <Button sdsType="primary" sdsStyle="square" onClick={handleSubmit}>
+        Join
+      </Button>
     </StyledFormControl>
   );
 };

@@ -3,12 +3,13 @@ import styled from "@emotion/styled";
 import {
   CommonThemeProps,
   fontBodyS,
-  fontBodyXxs,
-  fontHeaderM,
+  fontHeaderL,
+  fontHeaderS,
   fontHeaderXl,
   fontHeaderXxl,
   getColors,
   getFontWeights,
+  getSpaces,
 } from "czifui";
 import { LargerThanBreakpoint } from "./appStyle";
 
@@ -45,10 +46,18 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  ${fontHeaderM}
+  ${fontHeaderL}
 
-  margin-top: 30px;
+  margin-top: 0px;
   position: relative;
+
+  ${(props: CommonThemeProps) => {
+    const colors = getColors(props);
+
+    return `
+      color: ${colors?.primary[400]};
+    `;
+  }}
 `;
 
 export const Number = styled.span`
@@ -58,15 +67,15 @@ export const Number = styled.span`
 `;
 
 export const H4 = styled.h4`
-  ${fontBodyXxs}
-
-  margin-top: 5px;
+  ${fontHeaderS}
 
   ${(props: CommonThemeProps) => {
     const colors = getColors(props);
+    const spaces = getSpaces(props);
 
     return `
       color: ${colors?.gray[500]};
+      margin: ${spaces?.xxs}px 0;
     `;
   }}
 `;

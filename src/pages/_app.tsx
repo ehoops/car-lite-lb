@@ -43,6 +43,8 @@ const App = ({
         <StyledApp>
           <NavBar />
           <Component {...pageProps} />
+          {/* TODO: replace this with a footer */}
+          <NavBar />
         </StyledApp>
       </ThemeProvider>
     </CacheProvider>
