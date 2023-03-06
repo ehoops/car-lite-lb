@@ -1,4 +1,4 @@
-import { Button, Callout, InputText } from "czifui";
+import { Button, Callout } from "czifui";
 import { useEffect, useState } from "react";
 import {
   InputLabel,
