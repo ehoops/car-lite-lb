@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { ThemeProvider } from "@mui/material/styles";
 import { AppProps } from "next/app";
@@ -43,8 +44,7 @@ const App = ({
         <StyledApp>
           <NavBar />
           <Component {...pageProps} />
-          {/* TODO: replace this with a footer */}
-          <NavBar />
+          <Footer />
         </StyledApp>
       </ThemeProvider>
     </CacheProvider>
