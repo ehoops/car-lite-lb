@@ -19,30 +19,30 @@ export default class MyDocument extends Document {
           {/* Social media / SEO headers */}
           <meta
             name="description"
-            content="CZ GEN EPI is a free, open-source, no-code genomic epidemiology analysis platform for local public health departments to discover, track and stop outbreaks."
+            content="A site to coordinate safe street advocacy in Long Beach CA"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Chan Zuckerberg GEN EPI" />
-          <meta property="og:url" content="https://czgenepi.org/" />
+          <meta property="og:title" content="Car-Lite Long Beach" />
+          <meta property="og:url" content="https://car-lite-lb.vercel.app" />
           <meta
             property="og:description"
-            content="A genomic epidemiology analysis platform for public health departments to discover, track and stop outbreaks"
+            content="A site to coordinate safe street advocacy in Long Beach CA"
           />
           <meta
             property="og:image"
-            content="https://czgenepi.org/cz-gen-epi-meta.png"
+            content="https://car-lite-lb.vercel.app/api/og"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Chan Zuckerberg GEN EPI" />
+          <meta name="twitter:title" content="Car-Lite Long Beach" />
           <meta
             name="twitter:description"
-            content="A genomic epidemiology analysis platform for public health departments to discover, track and stop outbreaks"
+            content="A site to coordinate safe street advocacy in Long Beach CA"
           />
           <meta
             name="twitter:image"
-            content="https://czgenepi.org/cz-gen-epi-meta.png"
+            content="https://car-lite-lb.vercel.app/api/og"
           />
 
           {/* TODO Make this load async to fix render blocking */}
