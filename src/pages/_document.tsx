@@ -23,17 +23,14 @@ export default class MyDocument extends Document {
           />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Car-Lite Long Beach" />
-          <meta
-            property="og:url"
-            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
-          />
+          <meta property="og:url" content="https://car-lite-lb.vercel.app" />
           <meta
             property="og:description"
             content="A site to coordinate safe street advocacy in Long Beach CA"
           />
           <meta
             property="og:image"
-            content="https://car-lite-lb.vercel.app/api/og"
+            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -45,7 +42,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://car-lite-lb.vercel.app/api/og"
+            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
           />
 
           {/* TODO Make this load async to fix render blocking */}
