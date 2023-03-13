@@ -23,7 +23,10 @@ export default class MyDocument extends Document {
           />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Car-Lite Long Beach" />
-          <meta property="og:url" content="https://car-lite-lb.vercel.app" />
+          <meta
+            property="og:url"
+            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
+          />
           <meta
             property="og:description"
             content="A site to coordinate safe street advocacy in Long Beach CA"
