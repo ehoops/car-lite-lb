@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
+            content="https://car-lite-lb.vercel.app/car-lite-lb-logo.jpeg"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://car-lite-lb.vercel.app/Car-Lite-LB-logo.jpeg"
+            content="https://car-lite-lb.vercel.app/car-lite-lb-logo.jpeg"
           />
 
           {/* TODO Make this load async to fix render blocking */}
