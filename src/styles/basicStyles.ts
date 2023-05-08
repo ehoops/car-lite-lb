@@ -14,6 +14,9 @@ import {
 import { LargerThanBreakpoint } from "./appStyle";
 
 export const NarrowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 800px;
   ${LargerThanBreakpoint(`
     min-width: 500px;

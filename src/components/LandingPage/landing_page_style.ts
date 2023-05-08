@@ -68,6 +68,7 @@ export const Description = styled(P)`
 export const ImageSizer = styled.div`
   display: flex;
   width: 400px;
+  align-self: center;
 `;
 
 export const StyledList = styled.ul`

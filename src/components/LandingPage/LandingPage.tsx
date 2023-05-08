@@ -29,18 +29,22 @@ export const LandingPage = () => {
         <NarrowContainer>
           <DescriptionPane>
             <Description>
-              Driving in Long Beach should be optional. Whether you can’t drive
-              or sometimes choose not to, Long Beach should have safe streets
-              for you to walk, ride or take transit. Many different groups in
-              Long Beach care about this, but it can be hard to keep track of
-              all of the agendas, meetings and campaigns going on. We need to
-              work together in order to make progress.
+              The city of Long Beach should prioritize the development and
+              expansion of infrastructure for alternative modes of
+              transportation for those who cannot or choose not to drive. Many
+              people and groups in Long Beach share this belief and recognize
+              the benefits of creating safer streets. However, it can be
+              challenging to keep up with the various agendas, meetings, and
+              campaigns aimed at improving the quality of life for residents and
+              visitors.
             </Description>
             <Description>
-              This site will have resources for communicating with the city
-              council and for sharing with your network on social media. Our
-              mailing list will alert you when we need to activate our networks
-              to contact council members and show up at city council.
+              Car-Lite Long Beach seeks to unify like-minded people and entities
+              by improving communication, providing education on relevant
+              topics, and coordinating the efforts of interested parties. By
+              joining us, you will stay informed about safe streets and car-lite
+              initiatives in our city. We welcome your collaboration as we
+              strive to create a safer, cleaner, and quieter community.
             </Description>
           </DescriptionPane>
         </NarrowContainer>
@@ -55,7 +59,7 @@ export const LandingPage = () => {
           <TestimonialCarousel />
         </RowWrapper>
       </ZebraStripeRow>
-      <ZebraStripeRow>
+      {/* <ZebraStripeRow>
         <NarrowContainer>
           <DescriptionPane>
             <H3>Making outreach easier</H3>
@@ -79,7 +83,7 @@ export const LandingPage = () => {
             </RowWrapper>
           </DescriptionPane>
         </NarrowContainer>
-      </ZebraStripeRow>
+      </ZebraStripeRow> */}
     </StyledLandingPageWrapper>
   );
 };
