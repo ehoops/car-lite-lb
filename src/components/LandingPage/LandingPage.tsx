@@ -1,16 +1,14 @@
 import CarLiteLogo from "@/common/images/car-lite-logo.jpg";
-import { H3, H4, NarrowContainer } from "@/styles/basicStyles";
+import { NarrowContainer } from "@/styles/basicStyles";
 import Image from "next/image";
 import { MailingListSubscribe } from "../MailingListSubscribe";
 import { TestimonialCarousel } from "../TestimonialCarousel";
 import {
-  ColumnWrapper,
   Description,
   DescriptionPane,
   ImageSizer,
   RowWrapper,
   StyledLandingPageWrapper,
-  StyledList,
   ZebraStripeColumn,
   ZebraStripeRow,
 } from "./landing_page_style";
@@ -59,31 +57,6 @@ export const LandingPage = () => {
           <TestimonialCarousel />
         </RowWrapper>
       </ZebraStripeRow>
-      {/* <ZebraStripeRow>
-        <NarrowContainer>
-          <DescriptionPane>
-            <H3>Making outreach easier</H3>
-            <RowWrapper>
-              <ColumnWrapper>
-                <H4>To the city</H4>
-                <StyledList>
-                  <li>When are agenda items talked about</li>
-                  <li>Templates to contact council members</li>
-                  <li>Talking points</li>
-                </StyledList>
-              </ColumnWrapper>
-              <ColumnWrapper>
-                <H4>To the community</H4>
-                <StyledList>
-                  <li>Announcements for upcoming agenda items</li>
-                  <li>Social media content</li>
-                  <li>Talking points</li>
-                </StyledList>
-              </ColumnWrapper>
-            </RowWrapper>
-          </DescriptionPane>
-        </NarrowContainer>
-      </ZebraStripeRow> */}
     </StyledLandingPageWrapper>
   );
 };
