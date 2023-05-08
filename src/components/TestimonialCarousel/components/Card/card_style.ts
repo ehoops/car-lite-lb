@@ -1,6 +1,12 @@
 import { P } from "@/styles/basicStyles";
 import styled from "@emotion/styled";
-import { CommonThemeProps, fontBodyM, getCorners, getFontWeights, getSpaces } from "czifui";
+import {
+  CommonThemeProps,
+  fontBodyM,
+  getCorners,
+  getFontWeights,
+  getSpaces,
+} from "czifui";
 import { Slide } from "pure-react-carousel";
 
 export const StyledWrapper = styled(Slide)`
