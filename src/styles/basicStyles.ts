@@ -16,7 +16,7 @@ import { LargerThanBreakpoint } from "./appStyle";
 export const NarrowContainer = styled.div`
   max-width: 800px;
   ${LargerThanBreakpoint(`
-    min-width: 400px;
+    min-width: 500px;
   `)}
   margin: 0 auto 0;
 `;

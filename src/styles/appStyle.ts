@@ -7,7 +7,7 @@ export const StyledApp = styled.div`
   justify-content: center;
 `;
 
-const BREAKPOINT = "812px";
+export const BREAKPOINT = "812px";
 
 export const SmallerThanBreakpoint = (styles: string): string => {
   return `

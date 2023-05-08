@@ -2,6 +2,7 @@ import CarLiteLogo from "@/common/images/car-lite-logo.jpg";
 import { H3, H4, NarrowContainer } from "@/styles/basicStyles";
 import Image from "next/image";
 import { MailingListSubscribe } from "../MailingListSubscribe";
+import { TestimonialCarousel } from "../TestimonialCarousel";
 import {
   ColumnWrapper,
   Description,
@@ -49,6 +50,11 @@ export const LandingPage = () => {
           <MailingListSubscribe />
         </NarrowContainer>
       </ZebraStripeColumn>
+      <ZebraStripeRow>
+        <RowWrapper>
+          <TestimonialCarousel />
+        </RowWrapper>
+      </ZebraStripeRow>
       <ZebraStripeRow>
         <NarrowContainer>
           <DescriptionPane>
