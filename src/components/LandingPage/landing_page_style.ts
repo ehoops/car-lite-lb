@@ -16,6 +16,7 @@ export const StyledLandingPageWrapper = styled.div`
 export const ZebraStripeRow = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   ${ZebraStripes}
   ${(props: CommonThemeProps) => {
     const spaces = getSpaces(props);
@@ -67,7 +68,7 @@ export const Description = styled(P)`
 
 export const ImageSizer = styled.div`
   display: flex;
-  width: 400px;
+  max-width: 400px;
   align-self: center;
 `;
 
@@ -111,4 +112,14 @@ export const ColumnWrapper = styled.div`
     `)}
     `;
   }}
+`;
+
+export const CarouselZebraStripeWrapper = styled(ZebraStripeColumn)`
+  @media screen and (min-width: 350px) {
+    height: 250px;
+  }
+
+  @media screen and (min-width: 500px) {
+    height: 350px;
+  }
 `;
