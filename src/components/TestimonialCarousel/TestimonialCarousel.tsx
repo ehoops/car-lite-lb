@@ -18,8 +18,8 @@ export const TestimonialCarousel = () => {
       <Title>I support safe streets in Long Beach because...</Title>
       <CarouselWrapper>
         <CarouselProvider
-          naturalSlideWidth={1000}
-          naturalSlideHeight={300}
+          naturalSlideWidth={800}
+          naturalSlideHeight={400}
           totalSlides={testimonialCarouselContent.length}
           visibleSlides={1}
         >

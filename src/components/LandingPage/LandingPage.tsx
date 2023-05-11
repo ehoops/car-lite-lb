@@ -4,10 +4,10 @@ import Image from "next/image";
 import { MailingListSubscribe } from "../MailingListSubscribe";
 import { TestimonialCarousel } from "../TestimonialCarousel";
 import {
+  CarouselZebraStripeWrapper,
   Description,
   DescriptionPane,
   ImageSizer,
-  RowWrapper,
   StyledLandingPageWrapper,
   ZebraStripeColumn,
   ZebraStripeRow,
@@ -52,11 +52,9 @@ export const LandingPage = () => {
           <MailingListSubscribe />
         </NarrowContainer>
       </ZebraStripeColumn>
-      <ZebraStripeRow>
-        <RowWrapper>
-          <TestimonialCarousel />
-        </RowWrapper>
-      </ZebraStripeRow>
+      <CarouselZebraStripeWrapper>
+        <TestimonialCarousel />
+      </CarouselZebraStripeWrapper>
     </StyledLandingPageWrapper>
   );
 };
