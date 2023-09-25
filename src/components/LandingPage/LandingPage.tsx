@@ -3,6 +3,7 @@ import { NarrowContainer } from "@/styles/basicStyles";
 import Image from "next/image";
 import { MailingListSubscribe } from "../MailingListSubscribe";
 import { TestimonialCarousel } from "../TestimonialCarousel";
+import { SocialLinks } from "./components/SocialLinks";
 import {
   CarouselZebraStripeWrapper,
   Description,
@@ -21,6 +22,7 @@ export const LandingPage = () => {
           <ImageSizer>
             <Image src={CarLiteLogo} alt="Car Lite Long Beach Logo" />
           </ImageSizer>
+          <SocialLinks />
         </NarrowContainer>
       </ZebraStripeColumn>
       <ZebraStripeRow>
