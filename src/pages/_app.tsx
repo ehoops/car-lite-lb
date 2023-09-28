@@ -5,6 +5,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useMemo } from "react";
+import { IntlProvider } from "react-intl";
 import { NavBar } from "src/components/NavBar";
 import { StyledApp } from "src/styles/appStyle";
 import createEmotionCache from "src/styles/createEmotionCache";
@@ -12,7 +13,6 @@ import "src/styles/global.css";
 import { theme } from "src/styles/theme";
 import English from "../../content/compiled-locales/en.json";
 import Spanish from "../../content/compiled-locales/es.json";
-import { IntlProvider } from "react-intl";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
